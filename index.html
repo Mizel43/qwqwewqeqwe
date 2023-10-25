@@ -7,6 +7,14 @@
 		<link rel="stylesheet" href="assets/app.min.css?v=1.4">
 		<link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
 		<title>FBM Landings</title>
+		<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+            }
+        });
+    </script>
 	</head>
 	<body>
 		<header class="header">
